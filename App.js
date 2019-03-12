@@ -19,7 +19,8 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    this.state.scrollY.addListener(({ value }) => {
+    const { scrollY } = this.state
+    scrollY.addListener(({ value }) => {
       const shouldShowStickyHeader = value > 90
       this.setState({ shouldShowStickyHeader, animatedPadding: value })
     })
@@ -29,15 +30,18 @@ export default class App extends React.Component {
 
   renderItem = item => {
     const { evenRowStyle, oddRowStyle } = styles
-    if ( item % 2 === 0 ) return <View style={evenRowStyle} />
+    const isEven = item % 2 === 0
+    if (isEven) return <View style={evenRowStyle} />
     return <View style={oddRowStyle} />
   }
 
   renderHeader = () => {
     const { animatedViewStyle } = styles
+
     let { shouldShowStickyHeader, animatedPadding } = this.state
 
     if (animatedPadding > 90) animatedPadding = 90
+
     const animatedStyle = {
       paddingLeft: animatedPadding,
       paddingRight: animatedPadding / 2
@@ -79,10 +83,11 @@ export default class App extends React.Component {
     return <View />
   }
 
-  renderStickerHeader = () => {
-    const { stickerHeaderStyle } = styles
+  renderStickyHeader = () => {
+    const { stickyHeaderStyle } = styles
+
     return (
-      <View style={stickerHeaderStyle}>
+      <View style={stickyHeaderStyle}>
         <Icon
           type='ionicon'
           color='#517fa4'
@@ -108,9 +113,10 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { shouldShowStickyHeader } = this.state
     return (
       <View style={styles.container}>
-        { this.state.shouldShowStickyHeader && this.renderStickerHeader() }
+        { shouldShowStickyHeader && this.renderStickyHeader() }
         <FlatList
           data={rows}
           keyExtractor={this.keyExtractor}
@@ -126,21 +132,21 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
+    backgroundColor: '#fff',
     justifyContent: 'center',
   },
   evenRowStyle: {
     width,
-    backgroundColor: 'lightblue',
-    height: height * 0.2
+    height: height * 0.2,
+    backgroundColor: 'lightblue'
   },
   oddRowStyle: {
     width,
-    backgroundColor: 'lightpink',
-    height: height * 0.2
+    height: height * 0.2,
+    backgroundColor: 'lightpink'
   },
-  stickerHeaderStyle: {
+  stickyHeaderStyle: {
     width,
     height: 90,
     paddingLeft: 80,
