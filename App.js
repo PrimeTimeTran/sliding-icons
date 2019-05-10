@@ -88,6 +88,7 @@ export default class App extends React.Component {
 
     // this change has come from Henry
     //git checkout -b pr-l-Henry
+    //git checkout 
     return (
       <View style={stickyHeaderStyle}>
         <Icon
