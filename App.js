@@ -86,12 +86,15 @@ export default class App extends React.Component {
   renderStickyHeader = () => {
     const { stickyHeaderStyle } = styles
 
+
+    // This change has come from KHOA
+
     return (
       <View style={stickyHeaderStyle}>
         <Icon
           type='ionicon'
           color='#517fa4'
-          name='ios-american-football'
+          name='ios-add'
         />
         <Icon
           color='#f50'
