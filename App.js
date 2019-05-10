@@ -86,11 +86,7 @@ export default class App extends React.Component {
   renderStickyHeader = () => {
     const { stickyHeaderStyle } = styles
 
-
-    // This change has come from Loi.
-    // git checkout -b pr-1-loi
-    // git checkout pr-1-loi
-
+    // This change has come from Huy
     return (
       <View style={stickyHeaderStyle}>
         <Icon
