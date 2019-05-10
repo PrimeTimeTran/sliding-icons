@@ -1,0 +1,45 @@
+[33mcommit f049f661334588aee4abe71d916397067e35067d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e6640a5 46918c0
+Author: Loi Tran <datloiboi@gmail.com>
+Date:   Fri May 10 10:43:29 2019 +0700
+
+    Merge pull request #1 from PrimeTimeTran/pr-1-loi
+    
+    Added a comment which was used to help make the repo better.
+
+[33mcommit 46918c0a1d7f1bea428dbdcf118ec3b69081843b[m
+Merge: 5411175 ca5e768
+Author: Loi Tran <datloiboi@gmail.com>
+Date:   Fri May 10 10:38:41 2019 +0700
+
+    Fix merge request. Huy's code won
+
+[33mcommit 541117595424d282827a9d82b29ae4e603678fe5[m
+Author: Loi Tran <datloiboi@gmail.com>
+Date:   Fri May 10 10:29:36 2019 +0700
+
+    Added a new useful comment to the codebase
+
+[33mcommit ca5e768aee6491f749b20efc9ae8d76cc0b614ae[m
+Author: NguyenHuy1812 <nguyenhuy1812@gmail.com>
+Date:   Fri May 10 10:23:01 2019 +0700
+
+    This change come from Huy
+
+[33mcommit e6640a57e9860a74ec5fb32a85aac83c15fe9b5d[m[33m ([m[1;32mpr-1-loi[m[33m)[m
+Author: Loi Tran <lvt15@my.fsu.edu>
+Date:   Tue Mar 12 19:39:13 2019 +0700
+
+    Refactor: Code styling
+
+[33mcommit 6c3a5555d3dfa483c7d24be701961bd783e2cc5f[m
+Author: Loi Tran <lvt15@my.fsu.edu>
+Date:   Thu Mar 7 16:34:41 2019 +0700
+
+    Complete Sliding Icons
+
+[33mcommit fde2026c298aa44c7a9ca0215b7433961878b0ad[m
+Author: Loi Tran <lvt15@my.fsu.edu>
+Date:   Thu Mar 7 10:11:59 2019 +0700
+
+    Initial Commit
