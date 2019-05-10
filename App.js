@@ -46,7 +46,11 @@ export default class App extends React.Component {
       paddingLeft: animatedPadding,
       paddingRight: animatedPadding / 2
     }
+ 
 
+    // this change come frome vietanhdtd
+
+    
     if (!shouldShowStickyHeader) {
       return (
         <Animated.View style={[animatedViewStyle, animatedStyle]}>
