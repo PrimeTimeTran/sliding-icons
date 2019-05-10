@@ -86,6 +86,8 @@ export default class App extends React.Component {
   renderStickyHeader = () => {
     const { stickyHeaderStyle } = styles
 
+// Not a comment
+
     return (
       <View style={stickyHeaderStyle}>
         <Icon
