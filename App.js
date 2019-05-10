@@ -25,6 +25,7 @@ export default class App extends React.Component {
             this.setState({ shouldShowStickyHeader, animatedPadding: value })
         })
     }
+<<<<<<< HEAD
 
     keyExtractor = item => item.toString()
 
@@ -32,6 +33,37 @@ export default class App extends React.Component {
         const { evenRowStyle, oddRowStyle } = styles
         const isEven = item % 2 === 0
         if (isEven) return <View style = { evenRowStyle }
+=======
+    return <View />
+  }
+
+  renderStickyHeader = () => {
+    const { stickyHeaderStyle } = styles
+
+    // This change has come from Huy
+    // git checkout -b pr-1-Huy
+    return (
+      <View style={stickyHeaderStyle}>
+        <Icon
+          type='ionicon'
+          color='#517fa4'
+          name='ios-american-football'
+        />
+        <Icon
+          color='#f50'
+          name='heartbeat'
+          type='font-awesome'
+        />
+        <Icon
+          type='ionicon'
+          color='#507fa4'
+          name='ios-american-football'
+        />
+        <Icon
+          color='#f50'
+          name='heartbeat'
+          type='font-awesome'
+>>>>>>> ca5e768aee6491f749b20efc9ae8d76cc0b614ae
         />
         return <View style = { oddRowStyle }
         />
