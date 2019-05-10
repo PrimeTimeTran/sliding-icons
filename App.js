@@ -46,7 +46,7 @@ export default class App extends React.Component {
       paddingLeft: animatedPadding,
       paddingRight: animatedPadding / 2
     }
-
+    // boomboomRay
     if (!shouldShowStickyHeader) {
       return (
         <Animated.View style={[animatedViewStyle, animatedStyle]}>
