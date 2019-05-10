@@ -46,7 +46,7 @@ export default class App extends React.Component {
       paddingLeft: animatedPadding,
       paddingRight: animatedPadding / 2
     }
-
+    // boomboomRay
     if (!shouldShowStickyHeader) {
       return (
         <Animated.View style={[animatedViewStyle, animatedStyle]}>
@@ -54,7 +54,7 @@ export default class App extends React.Component {
             reverse
             type='ionicon'
             color='#517fa4'
-            name='ios-american-football'
+            name='ios-close'
           />
 
           <Icon
